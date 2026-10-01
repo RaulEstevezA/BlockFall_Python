@@ -7,7 +7,7 @@ def show_menu(screen):
     screen.fill((0, 0, 0))
     font = pygame.font.Font(None, 48)
 
-    title = font.render("TETRIS", True, WHITE)
+    title = font.render("BLOCKFALL", True, WHITE)
     start_text = font.render("presiona ENTER para jugar", True, WHITE)
     controls_text = font.render("presiona C para configurar controles", True, WHITE)
     exit_text = font.render("presiona ESC para salir", True, WHITE)

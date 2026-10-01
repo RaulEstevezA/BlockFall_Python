@@ -1,4 +1,8 @@
-# Tetris Game (Python Edition)
+# BlockFall (Python Edition)
+
+A classic falling blocks game built from scratch in Python with Pygame.
+
+**Play it in your browser:** [raulesteveza.github.io/demos/BlockFall_Python](https://raulesteveza.github.io/demos/BlockFall_Python/) (web version with touch controls, source in [BlockFall_Python_Demo](https://github.com/RaulEstevezA/BlockFall_Python_Demo))
 
 [![Watch the demo on YouTube](https://img.youtube.com/vi/EJYO5XpEWvg/0.jpg)](https://youtu.be/EJYO5XpEWvg)
 
@@ -6,7 +10,7 @@
 
 The other day, I was watching the movie *Tetris* (2023), which tells the fascinating story behind the discovery of the game and the challenges of obtaining its licensing rights. After finishing the film, I felt the urge to play a classic Tetris game.
 
-I started searching for a legal version online, but most of the ones I found were modern remakes. I really wanted to play the original, classic version. After some time browsing, I thought to myself, *"I'm a programmer, why not build my own Tetris?"* So I opened my laptop, launched Visual Studio Code, and started coding.
+I started searching for a legal version online, but most of the ones I found were modern remakes. I really wanted to play the original, classic version. After some time browsing, I thought to myself, *"I'm a programmer, why not build my own version?"* So I opened my laptop, launched Visual Studio Code, and started coding.
 
 I chose **Python** for this project since it's the language I’m most comfortable with. Here's how it came together!
 
@@ -56,7 +60,7 @@ The scoring system is based on a combination of lines cleared, level multipliers
   - 1 line → ×1.0
   - 2 lines → ×1.2
   - 3 lines → ×1.6
-  - 4 lines (Tetris) → ×2.0
+  - 4 lines → ×2.0
 
 - **Level Multipliers:**
   - Level 1 → ×1.0
@@ -72,8 +76,8 @@ You need **300 points** to advance to the next level.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/RaulEstevezA/tetrisInPython.git
-   cd tetrisInPython
+   git clone https://github.com/RaulEstevezA/BlockFall_Python.git
+   cd BlockFall_Python
    ```
 
 2. **Install Dependencies:**
@@ -83,12 +87,13 @@ You need **300 points** to advance to the next level.
 
 3. **Run the Game:**
    ```bash
-   python tetris.py
+   python blockfall.py
    ```
 
 ## Audio & Music
 
-- The game includes a background track inspired by classic Tetris tunes.
+- The background music is **Korobeiniki**, a 19th-century Russian folk song in the public domain.
+- No third-party recording or arrangement is used: the track is synthesized from scratch by [`tool/generate_music.py`](tool/generate_music.py) using only the Python standard library (`python tool/generate_music.py` regenerates `music/theme.ogg`, it needs ffmpeg).
 - Music playback is handled using Pygame's mixer.
 - Volume is set to 60% by default but can be adjusted in the source.
 
@@ -99,7 +104,9 @@ Check out the gameplay demo on [YouTube](https://youtu.be/EJYO5XpEWvg) to see it
 ## License
 
 This project is for educational and personal use.  
-Inspired by the original **Tetris** game concept, but all code here is original.
+Inspired by the classic falling blocks games, but all code here is original.
+
+BlockFall is a personal project and is not affiliated with, endorsed by or sponsored by The Tetris Company. *Tetris* is a trademark of The Tetris Company, mentioned here only to describe the inspiration behind the project.
 
 ## Final Thoughts
 

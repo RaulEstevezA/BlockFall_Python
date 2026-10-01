@@ -4,7 +4,7 @@ import pygame
 import random
 from settings import GRID_SIZE, COLUMNS, ROWS, COLORS, MARGIN_LEFT, MARGIN_TOP
 
-# Definición de las formas del Tetris
+# Definición de las formas de las piezas
 SHAPES = [
     [[1, 1, 1, 1]],  # I
     [[1, 1], [1, 1]],  # O
@@ -17,7 +17,7 @@ SHAPES = [
 
 class Piece:
     def __init__(self):
-        """Inicializa una nueva pieza de Tetris en el centro del tablero"""
+        """Inicializa una nueva pieza en el centro del tablero"""
         self.shape = random.choice(SHAPES)
         self.color = random.choice(COLORS)
         self.x = COLUMNS // 2 - len(self.shape[0]) // 2  # Centrar en columnas

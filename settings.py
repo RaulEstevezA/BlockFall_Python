@@ -23,10 +23,10 @@ WHITE = (255, 255, 255)
 GRAY = (50, 50, 50)
 LIGHT_GRAY = (180, 180, 180)
 
-# columnas del tetris
+# columnas del tablero
 COLUMNS = 10 
 
-# numero de filas en el tablero de tetris
+# numero de filas en el tablero
 ROWS = 20  
 
 # lista de colores para las piezas

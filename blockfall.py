@@ -16,13 +16,13 @@ pygame.init()
 pygame.mixer.init()
 
 # cargar y reproducir musica de fondo
-pygame.mixer.music.load('music/tetrisBase.mp3')
+pygame.mixer.music.load('music/theme.ogg')
 pygame.mixer.music.set_volume(0.6)
 pygame.mixer.music.play(-1)
 
 # crear ventana
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygame.display.set_caption("Tetris")
+pygame.display.set_caption("BlockFall")
 
 # inicializar el tablero y piezas
 board = Board()
